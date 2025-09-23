@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jayswel & Anju Wedding</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f3f3;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #b30059;
+    }
+    img {
+      border-radius: 10px;
+      margin: 20px 0;
+      max-width: 90%;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #b30059;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .button:hover {
+      background: #800040;
+    }
+  </style>
+</head>
+<body>
+  <h1>💍 Jayswel & Anju’s Wedding 💍</h1>
+  <p>We are so happy to invite you to our special day!</p>
+
+  <img src="bride-groom.jpg" alt="Bride & Groom Photo">
+
+  <h2>📍 Locations</h2>
+  <p>
+    <a class="button" href="https://maps.google.com/?q=GROOM_LOCATION" target="_blank">
+      Groom’s Location
+    </a>
+    <a class="button" href="https://maps.google.com/?q=BRIDE_LOCATION" target="_blank">
+      Bride’s Location
+    </a>
+  </p>
+
+  <p>Save the date and celebrate with us 🎉</p>
+</body>
+</html>
