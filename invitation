@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jayswel & Anju Wedding</title>
+</head>
+<body style="text-align:center; font-family: Arial, sans-serif;">
+  <h1>💍 Welcome to Jayswel & Anju’s Wedding 💍</h1>
+  <p>We are so happy to invite you to our special day!</p>
+
+  <h2>📍 Locations</h2>
+  <p><a href="https://maps.google.com/?q=GROOM_LOCATION" target="_blank">Groom’s Location</a></p>
+  <p><a href="https://maps.google.com/?q=BRIDE_LOCATION" target="_blank">Bride’s Location</a></p>
+</body>
+</html>
