@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jayswel & Anju Wedding</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayswel & Anju Wedding</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff0f5;
+        color: #333;
+        text-align: center;
+        line-height: 1.6;
+    }
+    header {
+        background: #ffb6c1;
+        color: #800040;
+        padding: 60px 20px;
+    }
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .section {
+        margin: 40px 0;
+    }
+    .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 14px 25px;
+        background: #b30059;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .button:hover {
+        background: #800040;
+    }
+    img.hero {
+        width: 90%;
+        max-width: 600px;
+        border-radius: 20px;
+        margin: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    #countdown {
+        font-size: 2em;
+        color: #b30059;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+    footer {
+        text-align: center;
+        color: #666;
+        margin: 40px 0;
+    }
+</style>
 </head>
-<body style="text-align:center; font-family: Arial, sans-serif;">
-  <h1>💍 Welcome to Jayswel & Anju’s Wedding 💍</h1>
-  <p>We are so happy to invite you to our special day!</p>
+<body>
 
-  <h2>📍 Locations</h2>
-  <p><a href="https://maps.google.com/?q=GROOM_LOCATION" target="_blank">Groom’s Location</a></p>
-  <p><a href="https://maps.google.com/?q=BRIDE_LOCATION" target="_blank">Bride’s Location</a></p>
+<header>
+    <h1>💍 Jayswel & Anju 💍</h1>
+    <p>Sharing happiness with friends and family</p>
+</header>
+
+<div class="container">
+    <!-- Hero Image -->
+    <section class="section">
+        <img class="hero" src="https://raw.githubusercontent.com/jayswel/jayswel_and_anju_wedding/main/IMG_3131.jpeg" alt="Jayswel & Anju">
+    </section>
+
+    <!-- Countdown -->
+    <section class="section">
+        <h2>Countdown to Our Special Day</h2>
+        <div id="countdown">Loading...</div>
+    </section>
+
+    <!-- Groom & Bride Locations -->
+    <section class="section">
+        <h2>📍 Locations</h2>
+        <a class="button" href="https://maps.app.goo.gl/tjDFKiyXPaLunCsSA?g_st=ipc" target="_blank">Groom’s Location</a>
+        <a class="button" href="https://maps.google.com?q=11.8955000,75.3407778&entry=gps&lucs=,94284475,94224825,94227247,94227248,94231188,47071704,94266209,47069508,94218641,94282134,94203019,47084304&g_st=ipc" target="_blank">Bride’s Location</a>
+    </section>
+
+    <!-- RSVP Button -->
+    <section class="section">
+        <h2>🎉 RSVP</h2>
+        <a class="button" href="RSVP_FORM_LINK" target="_blank">Send Your RSVP</a>
+    </section>
+</div>
+
+<footer>
+    <p>We look forward to celebrating with you ❤️</p>
+</footer>
+
+<script>
+// Countdown Timer
+const countDownDate = new Date("Nov 10, 2025 11:15:00").getTime();
+const countdownEl = document.getElementById("countdown");
+
+const timer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    if (distance < 0) {
+        clearInterval(timer);
+        countdownEl.innerHTML = "💖 Today is Our Wedding! 💖";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}, 1000);
+</script>
+
 </body>
 </html>
