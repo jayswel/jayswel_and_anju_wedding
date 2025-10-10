@@ -5,105 +5,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jayswel & Anju Wedding</title>
 <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #fff0f5;
-        color: #333;
-        text-align: center;
-        line-height: 1.6;
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff0f5;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  header {
+    background: #ffb6c1;
+    color: #800040;
+    padding: 60px 20px;
+  }
+  header h1 {
+    font-size: clamp(16px, 6.0vw, 34px);
+    margin: 0;
+    white-space: nowrap;
+  }
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .section {
+    margin: 40px 0;
+  }
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 25px;
+    background: #b30059;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .button:hover {
+    background: #800040;
+  }
+  img.hero {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  #countdown {
+    font-size: 2em;
+    color: #b30059;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    color: #666;
+    margin: 40px 0;
+  }
+  .falling-item {
+    position: fixed;
+    top: -50px;
+    z-index: 1000;
+    pointer-events: none;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
     }
-    header {
-        background: #ffb6c1;
-        color: #800040;
-        padding: 60px 20px;
-    }
-    header h1 {
-        font-size: 3em;
-        margin: 0;
-    }
-    header p {
-        font-size: 1.2em;
-        margin-top: 10px;
-    }
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .section {
-        margin: 40px 0;
-    }
-    .button {
-        display: inline-block;
-        margin: 10px;
-        padding: 14px 25px;
-        background: #b30059;
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        border-radius: 8px;
-        transition: 0.3s;
-    }
-    .button:hover {
-        background: #800040;
-    }
-    img.hero {
-        width: 90%;
-        max-width: 600px;
-        border-radius: 20px;
-        margin: 20px 0;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-    #countdown {
-        font-size: 2em;
-        color: #b30059;
-        margin: 20px 0;
-        font-weight: bold;
-    }
-    footer {
-        text-align: center;
-        color: #666;
-        margin: 40px 0;
-    }
+  }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>💍 Jayswel & Anju 💍</h1>
-    <p>Sharing happiness with friends and family</p>
+  <h1>💍 Jayswel & Anju Wedding 💍</h1>
+  <p>Sharing happiness with friends and family</p>
 </header>
 
 <div class="container">
-    <!-- Hero Image -->
-    <section class="section">
-        <img class="hero" src="https://raw.githubusercontent.com/jayswel/jayswel_and_anju_wedding/main/IMG_3131.jpeg" alt="Jayswel & Anju">
-    </section>
+  <section class="section">
+    <img class="hero" src="https://raw.githubusercontent.com/jayswel/jayswel_and_anju_wedding/main/IMG_3131.jpeg" alt="Jayswel & Anju">
+  </section>
 
-    <!-- Countdown -->
-    <section class="section">
-        <h2>Countdown to Our Special Day</h2>
-        <div id="countdown">Loading...</div>
-    </section>
+  <section class="section">
+    <h2>Countdown to Our Special Day</h2>
+    <div id="countdown">Loading...</div>
+  </section>
 
-    <!-- Groom & Bride Locations -->
-    <section class="section">
-        <h2>📍 Locations</h2>
-        <a class="button" href="https://maps.app.goo.gl/tjDFKiyXPaLunCsSA?g_st=ipc" target="_blank">Groom’s Location</a>
-        <a class="button" href="https://maps.google.com?q=11.8955000,75.3407778&entry=gps&lucs=,94284475,94224825,94227247,94227248,94231188,47071704,94266209,47069508,94218641,94282134,94203019,47084304&g_st=ipc" target="_blank">Bride’s Location</a>
-    </section>
+  <section class="section">
+    <h2>📍 Locations</h2>
+    <a class="button" href="https://maps.app.goo.gl/tjDFKiyXPaLunCsSA?g_st=ipc" target="_blank">Groom’s Residence</a>
+    <a class="button" href="https://maps.google.com?q=11.8955000,75.3407778&entry=gps" target="_blank">Bride’s Residence</a>
+  </section>
 
-    <!-- RSVP Button -->
-    <section class="section">
-        <h2>🎉 RSVP</h2>
-        <a class="button" href="RSVP_FORM_LINK" target="_blank">Send Your RSVP</a>
-    </section>
+  <section class="section">
+    <h2>💖 When & Where</h2>
+    <p style="margin:6px 0">When: Nov 10, 2025 — 11:15 AM</p>
+    <p style="margin:6px 0">Where: Groom's residence.</p>
+  </section>
 </div>
 
 <footer>
-    <p>We look forward to celebrating with you ❤️</p>
+  <p>We look forward to celebrating with you ❤️</p>
 </footer>
 
 <script>
@@ -112,22 +124,66 @@ const countDownDate = new Date("Nov 10, 2025 11:15:00").getTime();
 const countdownEl = document.getElementById("countdown");
 
 const timer = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
+  const now = new Date().getTime();
+  const distance = countDownDate - now;
 
-    if (distance < 0) {
-        clearInterval(timer);
-        countdownEl.innerHTML = "💖 Today is Our Wedding! 💖";
-        return;
-    }
+  if (distance < 0) {
+    clearInterval(timer);
+    countdownEl.innerHTML = "💖 Today is Our Wedding! 💖";
+    return;
+  }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
+
+// Falling hearts and sparkles
+const HEART_SVG = `
+  <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 21s-7-4.434-9-7.5C-1 8.5 4.5 3 8.5 6.1 10 7.6 12 9.2 12 9.2s2-1.6 3.5-3.1C19.5 3 25 8.5 21 13.5 19 16.566 12 21 12 21z" fill="currentColor"/>
+  </svg>`;
+
+const SPARKLE_SVG = `
+  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z" fill="currentColor"/>
+  </svg>`;
+
+const HEART_COLORS = ['#e84c8a','#d93b7a','#c02e63','#b30059','#ff6fa3'];
+const SPARKLE_COLORS = ['#ffd166','#ffcc66','#ffe29a','#fff5c3'];
+
+function createFallingItem() {
+  const el = document.createElement('div');
+  el.classList.add('falling-item');
+
+  const useSparkle = Math.random() < 0.5; // equal chance for hearts and sparkles
+  el.innerHTML = useSparkle ? SPARKLE_SVG : HEART_SVG;
+
+  const color = useSparkle ? SPARKLE_COLORS[Math.floor(Math.random()*SPARKLE_COLORS.length)] : HEART_COLORS[Math.floor(Math.random()*HEART_COLORS.length)];
+  el.style.color = color;
+
+  const startX = Math.random() * window.innerWidth;
+  el.style.left = `${startX}px`;
+
+  const size = Math.random() * 20 + 16;
+  el.style.fontSize = `${size}px`;
+  el.style.opacity = Math.random() * 0.8 + 0.2;
+
+  const duration = Math.random() * 5 + 5;
+  el.style.animationDuration = `${duration}s`;
+  el.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), duration * 1000);
+}
+
+setInterval(() => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  createFallingItem();
+}, 300);
 </script>
 
 </body>
